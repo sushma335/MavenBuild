@@ -5,7 +5,7 @@ stages('CI CD Pipeline'){
   stage('Code Checkout'){
     steps{
         script{
-                git credentialsId: 'sonarqube', url: 'https://github.com/sushma335/MavenBuild'
+                git credentialsId: 'githubtoken', url: 'https://github.com/sushma335/MavenBuild'
             }
         }
     }
